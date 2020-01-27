@@ -50,7 +50,7 @@ async def on_message(message):
 
     if message.content == ';help':
         embed = discord.Embed(title="Thunder", description="Thunder.gg의 League Discord Bot입니다.", color=0x00ff10)
-        embed.add_field(name="WEB", description="thunder001.herokuapp.com", inline=False)
+        embed.add_field(name="WEB", description="thunderweb.herokuapp.com", inline=False)
         # embed = discord.Embed(title="도움말", description="; 를 사용해 명령어를 부릅니다. EX: ;랜덤선택 빨강 파랑", color=0x00ff10)
 
         embed.add_field(name='\r;안녕', value='인사를 해줍니다.', inline=False)
