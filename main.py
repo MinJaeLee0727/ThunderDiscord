@@ -22,7 +22,6 @@ async def on_ready():
     print("----------------")
     await client.change_presence(game=discord.Game(name=';help', type=1))
 
-
 que = {}
 playerlist = {}
 playlist = list()  # 재생목록 리스트
