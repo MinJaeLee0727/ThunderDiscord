@@ -46,25 +46,25 @@ async def on_message(message):
 
     # Advance commands
     if message.content == ";안녕":
-        await client.send_message(message.channel, "안녕하세요, <@" + user + ">님")
+        await client.send_message(channel, "안녕하세요, <@" + user + ">님")
 
     if message.content == ';help':
         embed = discord.Embed(title="Thunder", description="Thunder.gg의 League Discord Bot입니다.", color=0x00ff10)
-        embed.add_field(name="WEB", description="thunderweb.herokuapp.com", inline=False)
+        embed.add_field(name="WEB", value="http://thunderweb.herokuapp.com", inline=False)
         # embed = discord.Embed(title="도움말", description="; 를 사용해 명령어를 부릅니다. EX: ;랜덤선택 빨강 파랑", color=0x00ff10)
 
-        embed.add_field(name='\r;안녕', value='인사를 해줍니다.', inline=False)
-        embed.add_field(name=';주사위', value='1 ~ 6 사이의 정수를 무작위로 출력합니다.', inline=False)
-        embed.add_field(name=';랜덤선택 (항목) (항목) (...)', value='원하는 만큼 항목을 적으면 그 중 하나를 출력합니다.', inline=False)
-        embed.add_field(name=';팀선택', value='RED팀과 BLUE팀 중 하나를 선택합니다.', inline=False)
-        embed.add_field(name=';사다리타기 (항목) (항목) (...) / (항목) (항목) (...)', value='좌측 항목과 우측 항목을 무작위로 연결해줍니다.'
-                        , inline=False)
-        embed.add_field(name=';투표 (투표제목) /(항목1)/(항목2)/(...)', value='투표를 만듭니다.', inline=False)
-        embed.add_field(name=';날씨검색 (위치)', value='해당 위치의 현재 기온을 출력합니다. (naver)', inline=False)
-        embed.add_field(name=';롤 전적검색 (소환사 이름)', value='해당 소환사의 랭크를 출력합니다. (na.opgg)', inline=False)
-        embed.add_field(name=';members', value='이 서버의 멤버 이름들을 출력합니다.', inline=False)
-        embed.add_field(name=';익명 [내용]', value='익명으로서 메세지를 보냅니다.', inline=False)
-        embed.add_field(name=';계산기 [1항] [사칙연산] [2항]', value='단순한 사칙연산을 계산해줍니다.', inline=False)
+        # embed.add_field(name='\r;안녕', value='인사를 해줍니다.', inline=False)
+        # embed.add_field(name=';주사위', value='1 ~ 6 사이의 정수를 무작위로 출력합니다.', inline=False)
+        # embed.add_field(name=';랜덤선택 (항목) (항목) (...)', value='원하는 만큼 항목을 적으면 그 중 하나를 출력합니다.', inline=False)
+        # embed.add_field(name=';팀선택', value='RED팀과 BLUE팀 중 하나를 선택합니다.', inline=False)
+        # embed.add_field(name=';사다리타기 (항목) (항목) (...) / (항목) (항목) (...)', value='좌측 항목과 우측 항목을 무작위로 연결해줍니다.'
+        #                 , inline=False)
+        # embed.add_field(name=';투표 (투표제목) /(항목1)/(항목2)/(...)', value='투표를 만듭니다.', inline=False)
+        # embed.add_field(name=';날씨검색 (위치)', value='해당 위치의 현재 기온을 출력합니다. (naver)', inline=False)
+        # embed.add_field(name=';롤 전적검색 (소환사 이름)', value='해당 소환사의 랭크를 출력합니다. (na.opgg)', inline=False)
+        # embed.add_field(name=';members', value='이 서버의 멤버 이름들을 출력합니다.', inline=False)
+        # embed.add_field(name=';익명 [내용]', value='익명으로서 메세지를 보냅니다.', inline=False)
+        # embed.add_field(name=';계산기 [1항] [사칙연산] [2항]', value='단순한 사칙연산을 계산해줍니다.', inline=False)
 
         await client.send_message(channel, embed=embed)
 
@@ -159,7 +159,6 @@ async def on_message(message):
         # avg4 = avg3.text.strip()
         # print(avg4)
 
-        # embed = discord.Embed(title="롤 전적검색: " + summoner, description = "이거슨 설명이라고 합니다!", color = 0x00ff00)
         #
         # await client.send_message(message.channel, embed = embed)
         embed = discord.Embed(title="롤 전적검색: " + summoner,
