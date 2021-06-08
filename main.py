@@ -283,70 +283,8 @@ async def on_message(message):
         await client.send_message(channel, playstr + "```")
 
 
-
-
-
-
-
-
-
-
-    #
-    #
-    # # Personal Basic commands
-    # if message.content.startswith('안녕'):
-    #     await  client.send_message(channel, "안녕하세요, <@" + user + ">님")
-    #
-    # if message.content.startswith('준섭이 아빠 이름은?'):
-    #     await  client.send_message(channel, "이영세입니다.")
-    #
-    # if message.content.startswith('이영세 아들 이름은?'):
-    #     await  client.send_message(channel, "이준섭입니다.")
-    #
-    # if message.content.startswith('난 누구게'):
-    #     await  client.send_message(channel, user + "님 입니다.")
-    #
-    # if message.content.startswith('유영이는 누구'):
-    #     await  client.send_message(channel, "")
-    #
-    # if message.content.startswith('병목이는 누구'):
-    #     await  client.send_message(channel, "")
-    #
-    # if message.content.startswith('현우는 누구'):
-    #     await  client.send_message(channel, "")
-    #
-    # if message.content.startswith('지훈이는 누구'):
-    #     await  client.send_message(channel, "골드에요..")
-    #
-    # if message.content.startswith('교준이는 누구'):
-    #     await  client.send_message(channel, "골드에요..")
-    #
-    # if message.content.startswith('교준이형은 누구'):
-    #     await  client.send_message(channel, "골드에요..")
-    #
-    # if message.content.startswith('섹스'):
-    #     await  client.send_message(channel, "변태 새끼입니다.")
-    #
-    # if message.content.startswith('민재는 누구'):
-    #     await client.send_message(channel, "실버 새끼에요 아이디는 0727chris 이구요 비번은 ehsahdmwk2580이에요 올려보세요 가능하면...")
-    #
-    # if message.content.startswith('유현'):
-    #     await client.send_message(channel, "니애미")
-    #
-    # if message.content.startswith('노민'):
-    #     if message.content == "노민아":
-    #         if message.author.id():
-    #             await client.send_message(channel, "뭐 병신아")
-    #     else:
-    #         await client.send_message(channel, "어쩌라고")
-    #
-    # if message.content.startswith('노민이 아빠 이름은?'):
-    #     await client.send_message(channel, "킹갓재너럴임패럴킹왕짱 민재에용")
-    #
-    # if message.content.startswith('사랑해'):
-    #     await client.send_message(channel, "저도요, " + user + "님 ♡♡")
-    # if message.content.startswith('유영이는?'):
-    #     await client.send_message(channel, "씹쌔끼입니다.")
+    if message.content.startswith('안녕'):
+        await  client.send_message(channel, "안녕하세요, <@" + user + ">님")
 
 
 access_token = os.environ["BOT_TOKEN"]
