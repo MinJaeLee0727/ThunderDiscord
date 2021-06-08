@@ -2,8 +2,6 @@ Discord bot where user can command to listen music and to search meaningful info
 
 # Commands
 
----
-
 ## ;롤 전적검색 {소환사 이름} | ;search {summoner name}
 
 ![Thunder%20Discord%20Bot%20ccb905c18ed747d68f54b8f446a43bd2/_2021-06-08__5.35.06.png](Thunder%20Discord%20Bot%20ccb905c18ed747d68f54b8f446a43bd2/_2021-06-08__5.35.06.png)
